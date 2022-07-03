@@ -1,0 +1,26 @@
+.btn {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background: #1363DF;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    transition: all ease-in-out .5s;
+    opacity: .9;
+}
+
+.btn:hover {
+    transform: scale(110%);
+    opacity: 1;
+}
+
+.btn svg {
+    color: #fff;
+    font-size: 35px;
+}

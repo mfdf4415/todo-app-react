@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.todoListBox {
+    width: 70%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.container header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container header .select {
+    width: 20rem;
+}
+
+.container header h2 {
+    color: #3d3d3d;
+    font-size: 28px;
+}
+
+.danger {
+    color: #f3754f;
+    text-align: center;
+    font-size: 20px;
+}

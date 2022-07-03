@@ -1,0 +1,95 @@
+.todo {
+    padding: 20px;
+    margin:  25px 0;
+    background: #f7fafd;
+    border-radius: 16px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    overflow: hidden;
+}
+
+.todo:last-child {
+    margin: 0;
+}
+
+.titleBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.title {
+    font-size: 20px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.complet {
+    font-size: 18px;
+    color: #666;
+    text-transform: capitalize;
+    text-decoration: line-through;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.icons svg {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icons svg:hover {
+    transform: scale(120%);
+}
+
+.icons .complet {
+    color: #1363DF;
+}
+
+.icons .edit {
+    color: #36AE7C;
+
+}
+.icons .remove {
+    color: #9d9d9d;
+}
+
+.show  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 15px;
+}
+
+.show span , .show svg {
+    font-size: 14px;
+    color: #6798e1;
+    cursor: pointer;
+}
+
+.show svg {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+.hideDesc {
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.showDesc {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    display: block;
+    width: auto;
+    height: auto;
+    transition: height ease-in-out .5s;
+} 

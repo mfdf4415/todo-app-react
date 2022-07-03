@@ -1,0 +1,12 @@
+.selectBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: auto;
+}
+
+.selectBox span {
+    font-size: 17px;
+    color: #666;
+    margin-right: 15px;
+}

@@ -1,0 +1,35 @@
+.header {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+header .logo {
+    font-size: 32px;
+    color: #1363DF;
+}
+
+header .desc {
+    font-size: 16px;
+    color: #6a6a6a;
+    letter-spacing: .5px;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icons svg {
+    font-size: 22px;
+    color: #6a6a6a;
+}
+
+.icons svg:hover {
+    transform: scale(115%);
+}

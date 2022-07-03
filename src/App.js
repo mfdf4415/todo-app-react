@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import Header from './components/Header/Header';
 import './App.css';
-
+import Form from './components/Form/Form';
+import { useState } from 'react';
+import AddBtn from './components/AddBtn/AddBtn';
+import TodoList from './components/TodoList/TodoList';
+import TodoProvider from './components/Context/TodoProvider';
+import SelectBox from './components/Select/Select';
 function App() {
+  const [showForm, setShowForm] = useState(false)
+
+  const showFormHandler = () => {
+    setShowForm(!showForm)
+    return (showForm)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <TodoProvider>
+        <Header />
+        <AddBtn showFormHandler={showFormHandler} showForm={showForm} />
+        <Form showFormHandler={showFormHandler} showForm={showForm} />
+        <TodoList showFormHandler={showFormHandler} />
+      </TodoProvider>
+
+    </>
+  )
 }
 
 export default App;
